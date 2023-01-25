@@ -1,2 +1,2 @@
 # site
-peterson é burro
+tu e um gostoso
