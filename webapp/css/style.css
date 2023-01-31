@@ -5,6 +5,9 @@
     #CEDAF2
     #0D0D0D
 */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,700&display=swap');
 
 *{
@@ -31,6 +34,11 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+.navbar{
+    background-color: #668CD9;
+
+} 
 
 h1, h2, h3 {
     font-weight: 700;
@@ -66,8 +74,121 @@ p {
 }
 
 /* Estilização do CSS */
+.container_card {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
 
-.navbar{
-    background-color: #668CD9;
+.grupo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
 
+.card {
+    background: #f4f4f4;
+    width: 380px;
+    height: 540px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 6px #00000099;
+}
+
+.card .imagem {
+    width: 100%;
+    height: 240px;
+}
+
+.card .imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 20px 0 20px 10px;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 0.85em;
+    margin: 0 10px 20px 10px;
+    text-align: justify;
+}
+
+.card .detalhes {
+    text-align: center;
+    margin: 25px 0 40px 0;
+}
+
+.card .detalhes span.preco {
+    font-size: 1.15em;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.card .detalhes span.preco::after {
+    content: ' ';
+    width: 65px;
+    height: 2px;
+    background-color: #2f3a59;
+    position: absolute;
+    top: 1.35em;
+    left: -3px;
+}
+
+.card .detalhes span.valor {
+    color: #010326;
+    font-weight: 600;
+}
+
+.card .grupo-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.card .grupo-btn .btn {
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 22px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 1px #868686;
+    transition: all 0.4s;
+}
+
+.card .grupo-btn .btn:hover {
+
+    transform: scale(1.09);
+    box-shadow: none;
+}
+
+.card .grupo-btn a.cor1  {
+    background-color: black;
+    color: white;
+ 
+}
+
+.card .grupo-btn a.cor2  {
+    background: rgb(241, 241, 241);
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    .grupo-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
