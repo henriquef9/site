@@ -99,6 +99,7 @@ nav{
     height: 540px;
     margin-bottom: 30px;
     border-radius: 5px;
+    border: none !important;
     box-shadow: 0px 0px 8px 3px #00000099;
     transition: all 0.4s;
 }
