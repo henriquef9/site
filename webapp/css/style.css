@@ -183,10 +183,16 @@ nav{
     border: 1px solid #000;
 }
 
+footer{
+    background-color: #0D0D0D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 768px) {
-
-
     .grupo-card {
         display: flex;
         flex-direction: row;
