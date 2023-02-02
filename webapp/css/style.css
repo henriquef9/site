@@ -100,7 +100,7 @@ nav{
     margin-bottom: 30px;
     border-radius: 5px;
     border: none !important;
-    box-shadow: 0px 0px 8px 3px #00000057;
+    box-shadow: 0px 0px 8px 3px #afafafc4;
     transition: all 0.4s;
 }
 
@@ -116,20 +116,19 @@ nav{
 
 
 .card h2 {
-    font-size: 1.1em;
-    margin: 10px 0 10px 10px;
+    font-size: 1em;
+    margin: 10px 0px 0px 10px;
     text-transform: uppercase;
 }
 
 .card p {
     font-size: 0.75em;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 15px 10px;
     text-align: justify;
 }
 
 .card .detalhes {
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .card .detalhes span.preco {
@@ -141,7 +140,7 @@ nav{
     position: relative;
 }
 
-.card .detalhes span.preco::after {
+/* .card .detalhes span.preco::after {
     content: ' ';
     width: 50px;
     height: 1px;
@@ -150,7 +149,7 @@ nav{
     top: 1.35em;
     left: -1px;
     box-shadow: 0px 2px 8px 1px #2f3a59;
-}
+} */
 
 .card .detalhes span.valor {
     font-size: 0.9em;
