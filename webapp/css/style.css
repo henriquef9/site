@@ -79,6 +79,15 @@ nav{
     justify-content: space-between;
 } 
 
+.nav-link {
+    color: #000 !important;
+    transition: all 0.5s !important;
+}
+
+.nav-link:hover {
+    transform: rotate(360deg) !important;
+}
+
 /* Estilização do CSS */
 
 .container_card {
