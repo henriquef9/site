@@ -317,6 +317,9 @@ footer{
     margin: 0;
 }
 
+.formulario-contato div.campo-texto label {
+    color: #000;
+}
 
 
 @media (min-width: 576px) { 
