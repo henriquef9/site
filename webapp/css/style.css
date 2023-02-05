@@ -283,12 +283,21 @@ footer{
 }
 
 .endereco p {
-    color: #0D0D0D;
+    color: #cedaf2;
     font-size: 0.9em;
     text-align: justify;
     width: 270px;
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+.endereco span {
+    color: #cedaf2;
+}
+
+.endereco span.numero {
+    font-size: 0.9em;
+    letter-spacing: 1.5px;
 }
 
 .endereco h4 {
@@ -298,22 +307,19 @@ footer{
 }
 
 
-
-.endereco span.numero {
-    font-size: 0.9em;
-    letter-spacing: 1.5px;
-}
-
 .logos-redes-sociais i {
     font-size: 30px;
     margin-left: 10px;
-    color: #333333;
+    color: #000;
 }
 
 .logos-redes-sociais i:first-child{
     margin: 0;
 }
 
+.formulario-contato div.campo-texto label {
+    color: #2651a6;
+}
 
 
 @media (min-width: 576px) { 
