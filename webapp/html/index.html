@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css"> 
+    
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/icons/css/all.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -119,19 +121,19 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-7 align-items-center justify-content-around grupo-fotos-perfil">
-                        <div class="foto-perfil">
+                        <div class="foto-perfil" v-on:mousemove="setPerfil(1)">
                             <img class="img-fluid" src="../img/no-image.png" alt="">
                         </div>
-                        <div class="foto-perfil">
+                        <div class="foto-perfil" v-on:mousemove="setPerfil(2)">
                             <img class="img-fluid" src="../img/no-image.png" alt="">
                         </div>
-                        <div class="foto-perfil">
+                        <div class="foto-perfil" v-on:mousemove="setPerfil(3)">
                             <img class="img-fluid" src="../img/no-image.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5 descricao">
-                        <h3>Nome</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex molestiae quia odio ipsum dolorum maxime. Dolorum praesentium dolore quibusdam, possimus hic, dignissimos tenetur tempore corporis molestiae itaque laudantium quae iure cum voluptate ad vero? Suscipit?</p>
+                        <h3>{{ name }}</h3>
+                        <p>{{ description }}</p>
                         <div class="d-flex icon-tecnologias">
                             <i class="fa-brands fa-html5"></i>
                             <i class="fa-brands fa-css3-alt"></i>
@@ -158,6 +160,31 @@
             </div>
           </div>
     </footer>
+
+    <script>
+        new Vue({
+          el: "#funcionario",
+          data: {
+            name: "Titulo",
+            description: "Passe o mouse na imagem!"
+          },
+          methods: {
+            setPerfil(value){
+                if(value == 1){
+                    this.name = 'Petsu',
+                    this.description = 'Meu nome é Petsu e gosto de Dançar';
+                }else if(value == 2){
+                    this.name = 'Valtin',
+                    this.description = 'Meu nome é Valtin e gosto de Dançar';
+                }else{
+                    this.name = 'Henri',
+                    this.description = 'Meu nome é Henri e gosto de Dançar';
+                }
+            }
+          }
+        });
+      </script>
+
 </body>
 
 </html>
