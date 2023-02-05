@@ -287,11 +287,12 @@ footer{
 
 .endereco h3 {
     font-size: 2em;
-    color: #2651a6;
+    color: #01154d;
     letter-spacing: -1.04px;
 }
 
 .endereco p {
+    color: #0D0D0D;
     font-size: 0.9em;
     text-align: justify;
     width: 270px;
@@ -301,7 +302,7 @@ footer{
 
 .endereco h4 {
     font-size: 2em;
-    color: #2651a6;
+    color: #01154d;
     margin-top: 40px;
 }
 
