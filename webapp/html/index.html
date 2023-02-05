@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css"> 
-    
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/icons/css/all.min.css">
 
@@ -49,17 +49,18 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
         <section id="principal">
             <h1 class="titulo">Software, Site e Aplicativos</h1>
-            <p class="subtitulo">Você pode contratar nossa equipe para desenvolver software para sua empresa, necessidade de trabalho.</p>
+            <p class="subtitulo">Você pode contratar nossa equipe para desenvolver software para sua empresa,
+                necessidade de trabalho.</p>
         </section>
-        
+
         <section id="produtos-prontos">
-            
+
             <h2 class="categoria mb-5">Software Prontos</h2>
-            
+
             <!-- Código do Card -->
             <div class="container_card">
                 <div class="grupo-card">
@@ -67,13 +68,14 @@
                         <div class="imagem">
                             <img src="../img/no-image.png" alt="">
                         </div>
-                         <div class="row align-items-baseline mb-2 flex-nowrap">
-                             <h2 class="col-4">Título</h2>
-                             <div class="col-8 detalhes">
-                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span> 
+                        <div class="row align-items-baseline mb-2 flex-nowrap">
+                            <h2 class="col-4">Título</h2>
+                            <div class="col-8 detalhes">
+                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
                             </div>
-                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam iste omnis placeat a id nobis sunt culpa aut consequuntur.</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam iste omnis placeat a
+                            id nobis sunt culpa aut consequuntur.</p>
                         <!-- detalhes -->
                         <a class="btn cor1" href="">Compra agora</a>
                     </div>
@@ -84,11 +86,12 @@
                         <div class="row align-items-baseline mb-2 flex-nowrap">
                             <h2 class="col-4">Título</h2>
                             <div class="col-8 detalhes">
-                               <span class="preco">Preço:</span> <span class="valor">R$ 500</span> 
-                           </div>
+                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam iste omnis placeat a id nobis sunt culpa aut consequuntur.</p>
-            
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam iste omnis placeat a
+                            id nobis sunt culpa aut consequuntur.</p>
+
                         <a class="btn cor1" href="">Compra agora</a>
                     </div>
                     <div class="card">
@@ -98,24 +101,25 @@
                         <div class="row align-items-baseline mb-2 flex-nowrap">
                             <h2 class="col-4">Título</h2>
                             <div class="col-8 detalhes">
-                               <span class="preco">Preço:</span> <span class="valor">R$ 500</span> 
-                           </div>
+                                <span class="preco">Preço:</span> <span class="valor">R$ 500</span>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam iste omnis placeat a id nobis sunt culpa aut consequuntur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam iste omnis placeat a
+                            id nobis sunt culpa aut consequuntur.</p>
                         <a class="btn cor1" href="">Compra agora</a>
 
                     </div>
-            </div>
+                </div>
         </section>
-        
+
         <section id="produtos-personalizado">
-            
+
             <h2 class="categoria mb-5">Software Personalizados</h2>
 
         </section>
-        
+
         <section id="funcionario">
-            
+
             <h2 class="categoria mb-5">Funcionários</h2>
 
             <div class="container-fluid">
@@ -147,43 +151,49 @@
         </section>
 
         <section id="contato">
-            
+
             <h2 class="categoria mb-5">Contato</h2>
 
         </section>
     </main>
-    
+
     <footer class="py-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center">
-                    Copyright © 2023 SlothCode. Todos os direitos reservados.
+                Copyright © 2023 SlothCode. Todos os direitos reservados.
             </div>
-          </div>
+        </div>
     </footer>
 
     <script>
         new Vue({
-          el: "#funcionario",
-          data: {
-            name: "Titulo",
-            description: "Passe o mouse na imagem!"
-          },
-          methods: {
-            setPerfil(value){
-                if(value == 1){
-                    this.name = 'Petsu',
-                    this.description = 'Meu nome é Petsu e gosto de Dançar';
-                }else if(value == 2){
-                    this.name = 'Valtin',
-                    this.description = 'Meu nome é Valtin e gosto de Dançar';
-                }else{
-                    this.name = 'Henri',
-                    this.description = 'Meu nome é Henri e gosto de Dançar';
+            el: '#funcionario',
+            data: {
+                name: '',
+                description: 'Passe o mouse para exibir informações!',
+                perfil: {
+                    1: {
+                        name: 'José Peterson',
+                        description: 'Olá, sou um desenvolvedor Full Stack, especializado em Front-end e Desktop. Tenho experiência em tecnologias como Java, Spring Boot, Hibernate, Mysql, Vue, HTML e CSS, e trabalho com dedicação para produzir soluções inovadoras e eficientes para os clientes.'
+                    },
+                    2: {
+                        name: 'Valter Junior',
+                        description: 'Tudo bem? Eu sou especialista em desenvolvimento back-end para sites e aplicativos. Se você precisar de uma solução de software que utilize tecnologias como PHP, Laravel, Node, Python, JS e C, eu estou aqui para ajudar. Ofereço soluções personalizadas e eficientes para atender às suas necessidades.'
+                    },
+                    3: {
+                        name: 'Antonia Henrique',
+                        description: 'Seja bem-vindo! Ofereço serviços de alta qualidade na área de design e desenvolvimento front-end, com ampla experiência em ferramentas como Photoshop, Adobe e HTML/CSS. Estou pronto para atender às suas necessidades e garantir um resultado incrível.'
+                    }
+                }
+            },
+            methods: {
+                setPerfil(value) {
+                    this.name = this.perfil[value].name;
+                    this.description = this.perfil[value].description;
                 }
             }
-          }
         });
-      </script>
+    </script>
 
 </body>
 
