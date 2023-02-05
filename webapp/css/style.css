@@ -259,11 +259,61 @@ footer{
 
 .descricao h3 {
     font-size: 1.4em;
+    color: #01154d;
+    
 }
 
 .descricao p {
     font-size: 1.1em;
 }
+
+
+/* Contato */
+
+
+
+.endereco {
+    border-left: 2px solid #2651a6;
+}
+
+.endereco h3 {
+    font-size: 2em;
+    color: #01154d;
+    letter-spacing: -1.04px;
+}
+
+.endereco p {
+    color: #0D0D0D;
+    font-size: 0.9em;
+    text-align: justify;
+    width: 270px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.endereco h4 {
+    font-size: 2em;
+    color: #01154d;
+    margin-top: 40px;
+}
+
+
+
+.endereco span.numero {
+    font-size: 0.9em;
+    letter-spacing: 1.5px;
+}
+
+.logos-redes-sociais i {
+    font-size: 30px;
+    margin-left: 10px;
+    color: #333333;
+}
+
+.logos-redes-sociais i:first-child{
+    margin: 0;
+}
+
 
 
 @media (min-width: 576px) { 
