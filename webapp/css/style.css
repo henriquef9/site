@@ -62,7 +62,7 @@ a.navbar-brand{
 
 section#produtos-prontos, #produtos-personalizado,
         #funcionario, #contato{
-    margin: 32px
+    padding: 32px
 }
 
 main section#principal{
@@ -75,6 +75,16 @@ main section#principal{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+section#produtos-personalizado{
+    background-color: #668CD9;
+    color: white;
+}
+
+section#contato{
+    background-color: #668CD9;
+    color: white;
 }
 
 nav{
@@ -228,8 +238,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
-
 
 /* funcionario */
 
