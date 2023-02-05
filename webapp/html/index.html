@@ -50,7 +50,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section id="principal">
             <h1 class="titulo">Software, Site e Aplicativos</h1>
             <p class="subtitulo">Você pode contratar nossa equipe para desenvolver software para sua empresa,
@@ -161,49 +161,7 @@
         </div>
     </footer>
 
-    <script>
-        new Vue({
-            el: '#funcionario',
-            data: {
-                name: '',
-                description: 'Passe o mouse para exibir informações!',
-                icones: '',
-                perfil: {
-                    1: {
-                        name: 'José Peterson',
-                        description: 'Olá, sou um desenvolvedor Full Stack, especializado em Front-end e Desktop. Tenho experiência em tecnologias como Java, Spring Boot, Hibernate, Mysql e Vue, e trabalho com dedicação para produzir soluções inovadoras e eficientes para os clientes.'
-                    },
-                    2: {
-                        name: 'Valter Junior',
-                        description: 'Tudo bem? Eu sou especialista em desenvolvimento back-end para sites e aplicativos. Se você precisar de uma solução de software que utilize tecnologias como PHP, Laravel, Node, Python, JS e C, eu estou aqui para ajudar. Ofereço soluções personalizadas e eficientes para atender às suas necessidades.'
-                    },
-                    3: {
-                        name: 'Antonia Henrique',
-                        description: 'Seja bem-vindo! Ofereço serviços de alta qualidade na área de design e desenvolvimento front-end, com ampla experiência em ferramentas como Photoshop, Adobe e HTML/CSS. Estou pronto para atender às suas necessidades e garantir um resultado incrível.'
-                    }
-                },
-                tecnologia: {
-                    1:{
-                        icones: '<i class="fa-brands fa-java"></i> <i class="fa fa-database"></i> <i class="fa-brands fa-vuejs"></i>',
-                    },
-                    2:{
-                        icones: '<i class="fa-brands fa-php"></i> <i class="fa-brands fa-laravel"></i> <i class="fa-brands fa-python"></i> <i class="fa-brands fa-js"></i>',
-                    },
-                    3:{
-                        icones: '<i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-sass"></i>',
-                    }
-                    
-                }
-            },
-            methods: {
-                setPerfil(value) {
-                    this.name = this.perfil[value].name;
-                    this.description = this.perfil[value].description;
-                    this.icones = this.tecnologia[value].icones;
-                }
-            }
-        });
-    </script>
+    <script src="../js/main.js"></script>
 
 </body>
 
