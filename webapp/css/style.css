@@ -57,7 +57,8 @@ a.navbar-brand{
 }
 
 .categoria{
-    margin-top: 30px;
+    font-size: 1.7em;
+    margin-top: 15px;
 }
 
 section#produtos-prontos, #produtos-personalizado,
@@ -147,8 +148,8 @@ nav{
 
 .card {
     background: #f4f4f4 !important;
-    width: 230px;
-    height: 290px;
+    width: 220px;
+    height: 200px;
     margin-bottom: 30px;
     border-radius: 5px;
     border: none !important;
@@ -174,13 +175,13 @@ nav{
 
 .card h2 {
     font-size: 1em;
-    margin: 10px 0px 0px 10px;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .card p {
-    font-size: 0.75em;
-    margin: 0 10px 15px 10px;
+    font-size: 0.70em;
+    margin: 0 10px 10px 10px;
     text-align: justify;
 }
 

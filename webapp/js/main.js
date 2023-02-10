@@ -14,7 +14,7 @@ new Vue({
                 description: 'Tudo bem? Eu sou especialista em desenvolvimento back-end para sites e aplicativos. Se você precisar de uma solução de software que utilize tecnologias como PHP, Laravel, Node, Python, JS e C, eu estou aqui para ajudar. Ofereço soluções personalizadas e eficientes para atender às suas necessidades.'
             },
             3: {
-                name: 'Antonia Henrique',
+                name: 'Antonio Henrique',
                 description: 'Seja bem-vindo! Ofereço serviços de alta qualidade na área de design e desenvolvimento front-end, com ampla experiência em ferramentas como Photoshop, Adobe e HTML/CSS. Estou pronto para atender às suas necessidades e garantir um resultado incrível.'
             }
         },
