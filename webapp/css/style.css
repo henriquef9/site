@@ -63,7 +63,7 @@ a.navbar-brand{
 
 section#produtos-prontos, #produtos-personalizado,
         #funcionario, #contato{
-    padding: 32px
+    padding: 30px
 }
 
 main section#principal{
@@ -236,7 +236,7 @@ footer{
 .grupo-fotos-perfil {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .foto-perfil {
@@ -268,10 +268,7 @@ footer{
     font-size: 1.1em;
 }
 
-
 /* Contato */
-
-
 
 .endereco {
     border-left: 2px solid #2651a6;
