@@ -101,21 +101,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-7 align-items-center justify-content-around grupo-fotos-perfil">
-                        <div class="foto-perfil" v-on:mousemove="setPerfil(1)">
+                        <div class="foto-perfil" @mouseover="setPerfil(1)">
                             <img class="img-fluid" src="../img/peterson.webp" alt="">
                         </div>
-                        <div class="foto-perfil" v-on:mousemove="setPerfil(2)">
+                        <div class="foto-perfil" @mouseover="setPerfil(2)">
                             <img class="img-fluid" src="../img/valter.jpg" alt="">
                         </div>
-                        <div class="foto-perfil" v-on:mousemove="setPerfil(3)">
+                        <div class="foto-perfil" @mouseover="setPerfil(3)">
                             <img class="img-fluid" src="../img/henrique.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5 descricao">
                         <h3>{{ name }}</h3>
                         <p>{{ description }}</p>
-                        <div class="d-flex icon-tecnologias" v-html="icones">
-                        </div>
+                        <div class="d-flex icon-tecnologias" v-html="icones"></div>
                     </div>
                 </div>
             </div>
@@ -128,7 +127,7 @@
                 <div class="row p-2">
                     <div class="col-md endereco ps-4">
                         <h3>Entre em contato conosco</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis omnis cumque aspernatur.</p>
+                        <p>Nossa equipe de atendimento está pronta para ajudá-lo a encontrar a melhor solução para suas necessidades.</p>
                         <span>Telefone: </span><span class="numero">(99) 98888-8888</span>
                         <h4>Siga-nos</h4>
                         <div class="logos-redes-sociais mt-3">

@@ -153,7 +153,7 @@ nav{
     margin-bottom: 30px;
     border-radius: 0 !important;
     border: none !important;
-    box-shadow: 0px 0px 4px 2px #afafafc4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.4s;
 }
 
@@ -212,9 +212,6 @@ nav{
     font-weight: 600;
 }
 
-
-
-
 footer{
     background-color: #0D0D0D;
     color: white;
@@ -227,7 +224,7 @@ footer{
 
 .grupo-fotos-perfil {
     display: flex;
-    gap: 10px;
+    gap: 2px;
     margin-bottom: 30px;
 }
 
@@ -237,6 +234,11 @@ footer{
     border: 2px solid #000;
     border-radius: 50%;
     overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.foto-perfil:hover{
+    box-shadow: 0 0 3px 3px #2651a6;
 }
 
 .icon-tecnologias {
@@ -244,36 +246,38 @@ footer{
     font-size: 60px;
 }
 
-
 .icon-tecnologias i {
     margin-right: 30px;
 
 }
 
 .descricao h3 {
+    font-family: Helvetica, sans-serif;
     font-size: 1.4em;
-    color: #01154d;
-    
+    font-weight: bold;
+    color: #1E1E1E;
+    transition: all 0.3s ease-in-out;
 }
 
 .descricao p {
+    font-family: Helvetica, sans-serif;
     font-size: 1.1em;
 }
 
 /* Contato */
 
 .endereco {
-    border-left: 2px solid #2651a6;
+    border-left: 2px solid white;
 }
 
 .endereco h3 {
     font-size: 2em;
-    color: #01154d;
+    color: white;
     letter-spacing: -1.04px;
 }
 
 .endereco p {
-    color: #cedaf2;
+    color: white;
     font-size: 0.9em;
     text-align: justify;
     width: 270px;
@@ -282,7 +286,7 @@ footer{
 }
 
 .endereco span {
-    color: #cedaf2;
+    color: white;
 }
 
 .endereco span.numero {
@@ -292,7 +296,7 @@ footer{
 
 .endereco h4 {
     font-size: 2em;
-    color: #01154d;
+    color: white;
     margin-top: 40px;
 }
 
@@ -300,7 +304,7 @@ footer{
 .logos-redes-sociais i {
     font-size: 30px;
     margin-left: 10px;
-    color: #000;
+    color: white;
 }
 
 .logos-redes-sociais i:first-child{
@@ -308,13 +312,11 @@ footer{
 }
 
 .formulario-contato div.campo-texto label {
-    color: #2651a6;
+    color: #0D0D0D;
 }
 
 
 @media (min-width: 576px) { 
-
-    
     .foto-perfil {
         width: 160px;
         height: 160px;
