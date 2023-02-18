@@ -156,19 +156,7 @@ nav{
     
 }
 
- /* This is from w3schools */
-  /* 
-  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .grupo-card::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .grupo-card {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+
 
 .card {
     background: #f4f4f4 !important;
