@@ -80,6 +80,8 @@ main section#principal{
 }
 
 section#produtos-personalizado{
+    display: flex;
+    flex-direction: row;
     background-color: #668CD9;
     color: white;
 }
@@ -97,6 +99,27 @@ nav{
 
 .nav-link {
     color: white !important;
+}
+
+/* BTN */
+
+.personalizar-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 10px;
+}
+  
+.personalizar-btn:hover {
+background-color: #3e8e41;
 }
 
 
