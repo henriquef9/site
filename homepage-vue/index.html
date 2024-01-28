@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
 
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- font awesome - kit icones-->
+    <script src="https://kit.fontawesome.com/56e487acd9.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/src/assets/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+
+      <div id="section-home" class="bg-black text-white row">
+        <div class="col col-md-5 p-5">
+          <div class="icon-menu d-inline-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="logo"><i class="fa-solid fa-code"></i><span class="">Sloth</span><span class="text-purple">Code</span></div>
+          <div class="w-75 mb-5 mb-md-none">
+            <h1 class="title-home">Potencialize sua presença online!</h1>
+            <p class="text-home">Desenvolvemos sites e aplicativos sob medida, elevando sua marca para o próximo nível. Da concepção à realidade digital, transformamos ideias em sucesso online.</p>
+          </div>
+          <button class="d-md-none btn btn-reuniao bg-purple text-white align-self-end" type="button">Marca uma reunião</button>
+        </div>
+
+        <div class="col-md-7 p-5 d-none img-fundo d-md-flex justify-content-end">
+          <button class="btn btn-reuniao bg-purple text-white align-self-end" type="button">Marca uma reunião</button>
+        </div>
+      </div>
+
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
