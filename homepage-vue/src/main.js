@@ -7,5 +7,7 @@ import router from './router'
 const app = createApp(App)
 
 app.use(router)
+app.use(BootstrapVue)
+app.use(IconsPlugin)
 
 app.mount('#app')
