@@ -38,15 +38,8 @@
     color: var(--color-purple);
 }
 
-.p-5 {
-    padding: 1rem;
-}
-
-
 
 /* específicos */
-
-
 
 .icon-menu {
     background: url(/public/img/full-screen.png) no-repeat;
@@ -106,6 +99,30 @@
     border-color: var(--color-2);
 }
 
+
+#img-about {
+    background: url(/public/img/sobre.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content-about {
+    padding: 3rem;
+}
+
+.title-about {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.text-about {
+    font-size: 0.95rem;
+    font-family: var(--font-secondary);
+    text-align: left;
+}
+
+
 /* media queries */
 
 @media (min-width: 576px) {
@@ -120,6 +137,19 @@
 
     .text-home {
         font-size: 1.2rem;
+    }
+
+    .content-about {
+        padding: 3rem;
+    }
+    
+    .title-about {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .text-about {
+        font-size: 1.25rem;
     }
 }
 
@@ -147,7 +177,19 @@
     .text-home {
         font-size: 0.95rem;
     }
+
+    .content-about {
+        padding: 4.5rem;
+    }
     
+    .title-about {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .text-about {
+        font-size: 1.25rem;
+    }
     
 }
 
@@ -197,6 +239,32 @@
     
     .title-home {
         font-size: 2.5rem;
+    }
+
+    .content-about {
+        padding: 8rem 12rem;
+    }
+
+    .title-about {
+        font-size: 4rem;
+    }
+
+    .text-about {
+        font-size: 2rem;
+    }
+
+    .content-about {
+        padding: 8rem 12rem;
+    }
+    
+    .title-about {
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .text-about {
+        font-size: 1.75rem;
+        margin-bottom: 5rem;
     }
 }
 
