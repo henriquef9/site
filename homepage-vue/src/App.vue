@@ -1,22 +1,34 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Footer from './components/Footer.vue'
+import Footer from './components/Footer.vue';
+import ButtonMeeting from './components/Button.vue'
 </script>
 
 <template>
-  <header>
-
-    <div>Hello World!!!</div>
-
-    <div class="wrapper">
-      <RouterLink to="/">Home</RouterLink> 
-    </div>
+  <header class="container">
+    <RouterLink to="/"> Home </RouterLink>
     <RouterView />
   </header>
+
+  <ButtonMeeting />
+
   <Footer />
-  
+
 </template>
 
+<script>
+export default {
+
+}
+</script>
+
 <style scoped>
+
+.v-enter, .v-leave-to{
+  opacity: 0;
+}
+
+.v-enter-active, .v-leave-active{
+  transition: opacity 1s;
+}
 
 </style>
