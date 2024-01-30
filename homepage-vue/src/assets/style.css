@@ -127,12 +127,54 @@ a {
     text-align: left;
 }
 
+/* serviços */
+
+#section-service {
+    padding: 1rem 2rem;
+}
+
+.service {
+    padding: 1.5rem 0;
+}
+
+.bg-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+
+#icon-service-1 {
+    background: url(/public/img/inteligencia-artificial.png) no-repeat;
+}
+
+#icon-service-2 {
+    background: url(/public/img/medalha.png) no-repeat;
+}
+
+#icon-service-3 {
+    background: url(/public/img/trofeu.png) no-repeat;
+}
+
+.icon-service {
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    width: 80px;
+    height: 80px;
+}
 
 /* media queries */
 
 @media (min-width: 576px) {
 
   
+
+    /* about */
+
+    #section-about {
+        margin-bottom: 3rem;
+    }
 
     .content-about {
         padding: 3rem;
@@ -145,6 +187,20 @@ a {
     
     .text-about {
         font-size: 1.25rem;
+    }
+
+    /* serviços */
+
+    .service {
+        padding: 1.5rem;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+
+    .service p {
+        font-size: 1rem;
     }
 }
 
@@ -196,6 +252,13 @@ a {
     .text-about {
         font-size: 1.25rem;
     }
+
+    /* serviços */
+
+    #section-service {
+        padding: 6rem 0;
+    }
+
     
 }
 
@@ -240,7 +303,7 @@ a {
     }
 
     .content-home {
-        padding: 20rem 12rem;
+        padding: 16rem 8rem;
     }
 
     .title-home {
@@ -269,6 +332,43 @@ a {
     .text-about {
         font-size: 1.75rem;
     }
+
+    /* serviços */
+
+    #section-service {
+        padding: 8rem 0;
+    }
+
+    .title-service {
+        font-size: 3.5rem;
+    }
+    
+    ;.text-service {
+        font-size: 2rem;
+    }
+
+    .bg-icon {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
+
+    .icon-service {
+        background-size: 100% 100% !important;
+        background-position: center center !important;
+        width: 120px;
+        height: 120px;
+    }
+
+    .service h3 {
+        font-size: 2rem;
+    }
+
+    .service p {
+        font-size: 1.25rem;
+    }
+
+   
 }
 
 @media (min-width: 1400px) and (min-height: 900px){
