@@ -9,12 +9,13 @@ import image from '@/components/icons/whatsapp.png'
 export default {
     data(){
         return {
+            url: 'https://api.whatsapp.com/send/?phone=5598970065970',
             image,
         }
     },
     methods: {
         handleClick(){
-            console.log('click');
+            window.open(this.url, '_blank').focus;
         }
     }
 }
@@ -31,6 +32,8 @@ export default {
         border-radius: 20px;
         color: var(--color-2);
         transition: 1.2s;
+        animation: upDown 3s infinite;
+        animation-timing-function: ease-in-out;
     }
 
     button:hover {
@@ -39,15 +42,22 @@ export default {
         transform: scale(1.1);
     }
     
+    body .border-active:active{
+        border: 2px solid #25D366;
+        outline: none;
+    }
+    
     .fixed-btn {
         position: fixed;
         bottom: 20px;
         right: 20px;
     }
     
-    body .border-active:active{
-        border: 2px solid #25D366;
-        outline: none;
+    @keyframes upDown{
+        0%{ transform: translateY(0);}
+        50% {transform: translateY(-5px);}
+        100% {transform: translateY(0);}
     }
 
+    
 </style>
