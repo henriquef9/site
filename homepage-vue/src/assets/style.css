@@ -11,8 +11,9 @@
     --color-2: #fff;
     --color-purple: #4c1eb8;
     --gray:  #DFDBDB;
-    --color-3: #FA0644
+    --color-3: #FA0644;
     --color-4: #363636;
+    --cor-whatsapp: #25D366;
 }
 
 
@@ -22,6 +23,10 @@
     margin: 0;
     font-family: var(--font-primary);
 }
+body{
+    background-color: black !important;
+  }
+  
 
 
 /* Geral */
