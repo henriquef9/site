@@ -12,21 +12,21 @@
 
     <nav class="d-none d-md-flex col-md-8 navbar justify-content-center">
         <ul class="nav">
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/">
+            <li class="nav-item nav-link nav-link-1 text-white" @click="scrollToElement('home')">
                 Home
-            </RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/about">
+            </li>
+            <li class="nav-item nav-link nav-link-1 text-white" @click="scrollToElement('about')" >
                 Sobre
-            </RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" :to="{ name: 'service', hash: '#service' }">
+            </li>
+            <li class="nav-item nav-link nav-link-1 text-white" @click="scrollToElement('service')">
                 Serviços
-            </RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/project">
+            </li>
+            <li class="nav-item nav-link nav-link-1 text-white" @click="scrollToElement('project')">
                 Projetos
-            </RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/agency">
+            </li>
+            <li class="nav-item nav-link nav-link-1 text-white" @click="scrollToElement('agency')">
                 Agência Qi3
-            </RouterLink>
+            </li>
         </ul>
         <RouterView />
     </nav>
@@ -39,6 +39,16 @@
 
  </div>
 </template>
+
+<script>
+export default {
+    methods:{
+        scrollToElement(elementID){
+            document.getElementById(elementID).scrollIntoView({behavior: 'smooth'});
+        }
+    }
+}
+</script>
 
 <style scoped>
 
