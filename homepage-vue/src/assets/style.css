@@ -49,6 +49,14 @@ a {
     text-decoration: none;
 }
 
+.font-primary {
+    font-family: var(--font-primary);
+}
+
+.font-secondary {
+    font-family: var(--font-secondary);
+}
+
 /* específicos */
 
 
@@ -143,8 +151,6 @@ a {
     ;
 }
 
-
-
 #icon-service-1 {
     background: url(/public/img/inteligencia-artificial.png) no-repeat;
 }
@@ -162,6 +168,55 @@ a {
     background-position: center center !important;
     width: 80px;
     height: 80px;
+}
+
+/* projects */
+
+#section-project {
+    padding: 3rem 2rem;
+}
+
+.content-project {
+    margin-bottom: 2rem;
+}
+
+.title-project {
+    font-size: 2rem;
+}
+
+.text-project {
+    font-size: 1rem;
+}
+
+.gruop-projects {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project {
+    max-width: 370px;
+    margin-bottom: 2rem;
+}
+
+#img-project-1 {
+    background: url('/public/img/servico-1.jpg') no-repeat;
+}
+
+#img-project-2 {
+    background: url('/public/img/servico-2.jpg') no-repeat;
+}
+
+#img-project-3 {
+    background: url('/public/img/pexels-photomix-company-230544.jpg') no-repeat;
+}
+
+.bg-img-project {
+    width: 100%;
+    height: 200px;
+    background-size: cover !important;
+    background-position: center center !important;
+    border: 2px solid var(--color-purple);
+    margin-bottom: 1.8rem;
 }
 
 /* media queries */
@@ -259,6 +314,19 @@ a {
         padding: 6rem 0;
     }
 
+    /* projects */  
+
+    .title-project {
+        font-size: 3.5rem;
+    }
+    
+    .text-project {
+        font-size: 1.5rem;
+    }
+
+    .project h3 {
+        font-size: 1.25rem;
+    }
     
 }
 
@@ -277,7 +345,22 @@ a {
 
 @media (min-width: 1200px) { 
     
+    /* projects */
+    #section-project {
+        padding: 8rem 3rem;
+    }
+
+    .content-project {
+        margin-bottom: 5.5rem;
+    }
+
+    .title-project {
+        font-size: 4.5rem;
+    }
     
+    .text-project {
+        font-size: 2.5rem;
+    }
 }
 
 @media (min-width: 1400px) { 
@@ -343,8 +426,8 @@ a {
         font-size: 3.5rem;
     }
     
-    ;.text-service {
-        font-size: 2rem;
+    .text-service {
+        font-size: 1.85rem;
     }
 
     .bg-icon {
