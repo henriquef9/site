@@ -18,7 +18,7 @@ import Navbar from './components/Navbar.vue';
 
   <hr class="d-md-none w-50 m-4 bg-white opacity-100 my-5" style="height: 3px;">
 
-  <div id="section-about" class="row bg-black">
+  <section id="about" class="row bg-black">
 
     <div id="img-about" class="d-none d-md-block col-md-5">
 
@@ -30,7 +30,99 @@ import Navbar from './components/Navbar.vue';
             <p class="text-about">Seu passaporte para o futuro digital está nas nossas mãos. Desenvolvemos soluções inovadoras que catapultam sua presença online para o próximo nível. Estamos prontos para guiá-lo nessa jornada transformadora. Vamos criar juntos o caminho para o sucesso digital.</p>
         </div>
     </div>
-  </div>
+  </section>
+
+  <section id="service">
+        
+    <div class="content-service text-white text-center">
+      <h2 class="title-service">Nossos Serviços</h2>
+      <p class="text-service">Destaque-se na web com nossos serviços exclusivos.</p>
+    </div>
+
+    <div class="group-services text-white text-center row">
+
+      <div class="service col-12 col-md-4">
+        <div class="d-flex justify-content-center my-4">
+          <div class="bg-icon bg-white d-flex justify-content-center align-items-center">
+            <div id="icon-service-1" class="icon-service bg-white"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Serviço 1</h3>
+          <p>Optimize manpower to benefit your business.</p>
+        </div>
+      </div>
+
+      <div class="service col-12 col-md-4">
+        <div class="d-flex justify-content-center my-4">
+          <div class="bg-icon bg-white d-flex justify-content-center align-items-center">
+            <div id="icon-service-2" class="icon-service bg-white"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Serviço 1</h3>
+          <p>Optimize manpower to benefit your business.</p>
+        </div>
+      </div>
+
+      <div class="service col-12 col-md-4">
+        <div class="d-flex justify-content-center my-4">
+          <div class="bg-icon bg-white d-flex justify-content-center align-items-center">
+            <div id="icon-service-3" class="icon-service bg-white"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Serviço 1</h3>
+          <p>Optimize manpower to benefit your business.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="project" class="bg-white">
+        
+        <div class="content-project text-center">
+          <h2 class="title-project text-black">Nossos <span class="text-purple">projetos</span></h2>
+          <p class="text-project text-black">Explore nossa galeria de realizações.</p>
+        </div>
+
+        <div class="gruop-projects row justify-content-between flex-column flex-md-row align-content-center">
+
+          <div class="project col-12 col-md-4">
+            <div class="bg-img-project" id="img-project-1">
+            </div>
+            <div class="text-black">
+              <h3 class="font-primary fw-bold text-uppercase">desenvolvimento Customizado</h3>
+              <p class="font-secondary">Criamos websites e aplicativos sob medida, alinhados às necessidades exclusivas do seu negócio. Do planejamento à implementação, nossa abordagem personalizada assegura que a solução final seja adaptada às metas específicas da sua empresa</p>
+            </div>
+          </div>
+
+          <div class="project col-12 col-md-4">
+            <div class="bg-img-project" id="img-project-2">
+            </div>
+            <div class="text-black">
+              <h3 class="font-primary fw-bold text-uppercase">práticas SEO avançadas</h3>
+              <p class="font-secondary">Maximize a visibilidade online com nossos serviços de otimização para motores de busca. Implementamos práticas SEO avançadas, garantindo que seu site esteja otimizado para os algoritmos de pesquisa, melhorando significativamente sua posição nos resultados e aumentando a relevância para seu público-alvo.</p>
+            </div>
+          </div>
+
+          <div class="project col-12 col-md-4">
+            <div class="bg-img-project" id="img-project-3">
+            </div>
+            <div class="text-black">
+              <h3 class="font-primary fw-bold text-uppercase">Design Responsivo</h3>
+              <p class="font-secondary">Oferecemos serviços de design web que vão além do visual, priorizando a usabilidade e a experiência do usuário. Desenvolvemos interfaces responsivas, garantindo uma navegação fluida e envolvente em dispositivos variados.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
 
   <ButtonMeeting />
 

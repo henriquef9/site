@@ -7,20 +7,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
     },
-    {
-      path: '/about',
-      name: 'about',
-    },
-    {
-      path: '/service',
-      name: 'service'
-    }
-  ],
-  scrollBehavior(to, from, savedPosition){
-    return{
-
-    }
-  }
+  ]
 })
 
 export default router
