@@ -12,17 +12,29 @@
 
     <nav class="d-none d-md-flex col-md-8 navbar justify-content-center">
         <ul class="nav">
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/">Home</RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/about">Sobre</RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/service">Serviços</RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/project">Projetos</RouterLink>
-            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/agency">Agência Qi3</RouterLink>
+            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/">
+                Home
+            </RouterLink>
+            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/about">
+                Sobre
+            </RouterLink>
+            <RouterLink class="nav-item nav-link nav-link-1 text-white" :to="{ name: 'service', hash: '#service' }">
+                Serviços
+            </RouterLink>
+            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/project">
+                Projetos
+            </RouterLink>
+            <RouterLink class="nav-item nav-link nav-link-1 text-white" to="/agency">
+                Agência Qi3
+            </RouterLink>
         </ul>
         <RouterView />
     </nav>
 
     <div class="d-none d-sm-flex col-md-2 justify-content-end">
-        <button type="button" class="btn bg-purple text-white align-self-center">Marca uma reunião</button>
+        <button type="button" class="btn bg-purple text-white align-self-center">
+            Marca uma reunião
+        </button>
     </div>
 
  </div>

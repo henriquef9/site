@@ -18,7 +18,7 @@ import Navbar from './components/Navbar.vue';
 
   <hr class="d-md-none w-50 m-4 bg-white opacity-100 my-5" style="height: 3px;">
 
-  <div id="section-about" class="row bg-black">
+  <section id="about" class="row bg-black">
 
     <div id="img-about" class="d-none d-md-block col-md-5">
 
@@ -30,7 +30,58 @@ import Navbar from './components/Navbar.vue';
             <p class="text-about">Seu passaporte para o futuro digital está nas nossas mãos. Desenvolvemos soluções inovadoras que catapultam sua presença online para o próximo nível. Estamos prontos para guiá-lo nessa jornada transformadora. Vamos criar juntos o caminho para o sucesso digital.</p>
         </div>
     </div>
-  </div>
+  </section>
+  <section id="service">
+        
+    <div class="content-service text-white text-center">
+      <h2 class="title-service">Nossos Serviços</h2>
+      <p class="text-service">Destaque-se na web com nossos serviços exclusivos.</p>
+    </div>
+
+    <div class="group-services text-white text-center row">
+
+      <div class="service col-12 col-md-4">
+        <div class="d-flex justify-content-center my-4">
+          <div class="bg-icon bg-white d-flex justify-content-center align-items-center">
+            <div id="icon-service-1" class="icon-service bg-white"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Serviço 1</h3>
+          <p>Optimize manpower to benefit your business.</p>
+        </div>
+      </div>
+
+      <div class="service col-12 col-md-4">
+        <div class="d-flex justify-content-center my-4">
+          <div class="bg-icon bg-white d-flex justify-content-center align-items-center">
+            <div id="icon-service-2" class="icon-service bg-white"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Serviço 1</h3>
+          <p>Optimize manpower to benefit your business.</p>
+        </div>
+      </div>
+
+      <div class="service col-12 col-md-4">
+        <div class="d-flex justify-content-center my-4">
+          <div class="bg-icon bg-white d-flex justify-content-center align-items-center">
+            <div id="icon-service-3" class="icon-service bg-white"></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Serviço 1</h3>
+          <p>Optimize manpower to benefit your business.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
   <ButtonMeeting />
 
