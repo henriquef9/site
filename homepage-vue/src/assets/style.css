@@ -16,6 +16,7 @@
     --cor-whatsapp: #25D366;
 }
 
+/* Geral */
 
 * {
     box-sizing: border-box;
@@ -26,10 +27,6 @@
 body{
     background-color: black !important;
   }
-  
-
-
-/* Geral */
 
 .bg-black {
     background-color: var(--color-1);
@@ -43,67 +40,70 @@ body{
     color: var(--color-purple);
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* específicos */
 
-.icon-menu {
-    background: url(/public/img/full-screen.png) no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+
+/* home */
+
+
+.header {
+    padding: 1rem;
+    height: min-content;
+    margin-bottom: 1rem;
+}
+
+
+
+#img-logo {
     width: 50px;
     height: 50px;
-    margin-bottom: 3rem;
-    font-size: 2rem;
+    background: url(/public/img/full-screen.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
+.nav-link{
+    position: relative;
+    margin-left: 2rem;
 }
 
-.logo i {
-    margin-right: 15px;
+.nav-link::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+}
+
+.content-home {
+    padding: 1rem 2rem;
 }
 
 .title-home {
     font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
 }
 
-.text-home {
-    font-family: var(--font-secondary);
-    font-size: 0.95rem;
-    font-weight: bold;
-}
-
-.img-fundo {
-    background: url(/public/img/fundo-home.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.caption-home {
+    font-size: 1rem;
 }
 
 .btn {
-    width: 255.5px;
-    height: 64.9px;
-    border-radius: 20px;
+    padding: 0.8rem 1.2rem;
 }
 
-.btn-reuniao {
-    font-family: var(--font-secondary);
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: 1.2s;
-}
 
-.btn-reuniao:hover {
-    background-color: var(--color-purple);
-    transform: scale(1.1);
-    border-color: var(--color-2);
-}
-
+/* about */
 
 #img-about {
     background: url(/public/img/sobre.jpg) no-repeat;
@@ -112,7 +112,7 @@ body{
 }
 
 .content-about {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .title-about {
@@ -132,17 +132,7 @@ body{
 
 @media (min-width: 576px) {
 
-    .logo {
-        font-size: 3rem;
-    }
-
-    .title-home {
-        font-size: 2.5rem;
-    }
-
-    .text-home {
-        font-size: 1.2rem;
-    }
+  
 
     .content-about {
         padding: 3rem;
@@ -159,29 +149,40 @@ body{
 }
 
 @media (min-width: 768px) { 
-    .p-5 {
-        padding: 2rem !important;
+
+    /* home */
+
+    .header {
+        padding: 1rem;
     }
 
-    .icon-menu {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 4rem;
-        font-size: 3rem;
+    #img-logo {
+        width: 60px;
+        height: 60px;
     }
-    
-    .logo {
-        font-size: 2rem;
-        margin-bottom: 4rem;
+
+    .nav-link{
+        font-size: 0.85rem;
     }
-    
+
+    .content-home {
+        padding: 14rem 6rem;
+    }
+
     .title-home {
+        font-size: 2.5rem;
+    }
+
+    .caption-home {
         font-size: 1.5rem;
     }
 
-    .text-home {
-        font-size: 0.95rem;
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
     }
+
+    /* About */
 
     .content-about {
         padding: 4.5rem;
@@ -199,64 +200,55 @@ body{
 }
 
 @media (min-width: 992px) { 
-    .p-5 {
-        padding: 3rem !important;
+
+    .content-home {
+        padding: 14rem 8rem;
     }
 
-    .logo {
-        font-size: 3rem;
-        margin-bottom: 4rem;
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
     }
-    
-    .title-home {
-        font-size: 2rem;
-    }
-
-    .text-home {
-        font-size: 1.2rem;
-    }
+  
 }
 
 @media (min-width: 1200px) { 
-    .p-5 {
-        padding: 3.5rem !important;
-    }
+    
     
 }
 
 @media (min-width: 1400px) { 
 
-    .p-5 {
-        padding: 4rem !important;
+    /* Home */
+
+    
+    .header {
+        padding: 1rem 2rem;
     }
 
-    .icon-menu {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 5rem;
-        font-size: 3.5rem;
+    #img-logo {
+        width: 80px;
+        height: 80px;
     }
-    
-    .logo {
-        font-size: 3rem;
-        margin-bottom: 5rem;
+
+
+    .content-home {
+        padding: 20rem 12rem;
     }
-    
+
     .title-home {
-        font-size: 2.5rem;
-    }
-
-    .content-about {
-        padding: 8rem 12rem;
-    }
-
-    .title-about {
         font-size: 4rem;
     }
 
-    .text-about {
-        font-size: 2rem;
+    .caption-home {
+        font-size: 2.5rem;
     }
+
+    .btn {
+        padding: 0.8rem 1.2rem;
+    }
+
+    /* about */
 
     .content-about {
         padding: 8rem 12rem;
@@ -269,28 +261,9 @@ body{
     
     .text-about {
         font-size: 1.75rem;
-        margin-bottom: 5rem;
     }
 }
 
 @media (min-width: 1400px) and (min-height: 900px){
-    .p-5 {
-        padding: 4rem !important;
-    }
-
-    .icon-menu {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 8rem;
-        font-size: 4.5rem;
-    }
-    
-    .logo {
-        font-size: 3.5rem;
-        margin-bottom: 8rem;
-    }
-    
-    .title-home {
-        font-size: 2.5rem;
-    }
+ 
 }
