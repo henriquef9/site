@@ -227,10 +227,17 @@ a {
     }
 
     #img-logo {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
+    .logo-text {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
 
     .content-home {
         padding: 20rem 12rem;
