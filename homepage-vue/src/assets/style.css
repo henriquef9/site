@@ -18,6 +18,12 @@
 
 /* Geral */
 
+/* Isso foi feito para retirar um bug onde ocorria scroll na horizontal*/
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -77,6 +83,10 @@ a {
     background-position: center center !important;
 }
 
+.icon-menu {
+    font-size: 3rem;
+}
+
 .nav-link{
     position: relative;
     margin-left: 2rem;
@@ -99,6 +109,10 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
+}
+
+.btn-home {
+    margin-top: 3rem;
 }
 
 .title-home {
@@ -326,7 +340,7 @@ a {
     }
 
     .nav-link{
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     .title-home {
@@ -433,6 +447,10 @@ a {
 @media (min-width: 992px) { 
 
     /* home */
+
+    .nav-link {
+        font-size: 0.75rem;
+    }
 
     .btn {
         font-size: 1rem;
