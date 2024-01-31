@@ -1,0 +1,324 @@
+/* Celulares (Portrait) - abaixo de 480 pixels de largura */
+@media (max-width: 479px) {
+  /* Estilos específicos para celulares em portrait */
+  /* home */
+
+  .title-home {
+    font-size: 2rem;
+  }
+
+  .caption-home {
+    font-size: 1.25rem;
+  }
+
+  /* about */
+
+  #about {
+    margin-bottom: 3rem;
+  }
+
+  .content-about {
+    padding: 3rem;
+  }
+
+  .title-about {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-about {
+    font-size: 1.25rem;
+  }
+
+  /* serviços */
+
+  .service {
+    padding: 1.5rem;
+  }
+
+  .service h3 {
+    font-size: 1.5rem;
+  }
+
+  .service p {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares (Landscape) - entre 480 e 767 pixels de largura */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* Estilos específicos para celulares em landscape */
+  /* home */
+
+  .header {
+    padding: 1rem;
+  }
+
+  .img-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-link {
+    font-size: 0.65rem;
+  }
+
+  .title-home {
+    font-size: 2.5rem;
+  }
+
+  .caption-home {
+    font-size: 1.5rem;
+  }
+
+  /* About */
+
+  .content-about {
+    padding: 4.5rem;
+  }
+
+  .title-about {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-about {
+    font-size: 1.25rem;
+  }
+
+  /* serviços */
+
+  #service {
+    padding: 6rem 0;
+  }
+
+  /* projects */
+
+  .title-project {
+    font-size: 3.5rem;
+  }
+
+  .text-project {
+    font-size: 1.5rem;
+  }
+
+  .project h3 {
+    font-size: 1.25rem;
+  }
+
+  /* footer */
+
+  #footer {
+    padding: 6rem 2rem;
+  }
+
+  .logo-footer .img-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo-footer .logo-text {
+    font-size: 2rem;
+  }
+
+  .redes-sociais {
+    font-size: 1.5rem;
+  }
+
+  .linha-footer {
+    width: 2px !important;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .linha-footer::after {
+    position: absolute;
+    content: "";
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: -3.5px;
+    left: -3.5px;
+  }
+
+  .linha-footer::before {
+    position: absolute;
+    content: "";
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 100%;
+    right: -4px;
+  }
+
+  .title-footer {
+    font-size: 1.45rem;
+  }
+
+  .text-footer {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablets - entre 768 e 1023 pixels de largura */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos específicos para tablets */
+
+  /* home */
+
+  .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Desktops Pequenos - entre 1024 e 1199 pixels de largura */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* Estilos específicos para desktops pequenos */
+}
+
+/* Desktops Médios - entre 1200 e 1439 pixels de largura */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    
+  /* Estilos específicos para desktops médios */
+
+  /* projects */
+  #project {
+    padding: 8rem 3rem;
+  }
+
+  .content-project {
+    margin-bottom: 5.5rem;
+  }
+
+  .title-project {
+    font-size: 4.5rem;
+  }
+
+  .text-project {
+    font-size: 2.5rem;
+  }
+
+  /* footer */
+
+  #footer {
+    padding: 12rem 6rem;
+  }
+
+  .logo-footer {
+    margin-bottom: 4rem;
+  }
+
+  .logo-footer .img-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-footer .logo-text {
+    font-size: 3rem;
+  }
+
+  .redes-sociais {
+    font-size: 2rem;
+  }
+
+  .title-footer {
+    font-size: 1.65rem;
+  }
+
+  .text-footer {
+    font-size: 1.45rem;
+  }
+  
+}
+
+/* Desktops Grandes - 1440 pixels de largura e acima */
+@media (min-width: 1440px) {
+  /* Estilos específicos para desktops grandes */
+
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .img-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-text {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .title-home {
+    font-size: 4rem;
+  }
+
+  .caption-home {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* about */
+
+  .content-about {
+    padding: 8rem 12rem;
+  }
+
+  .title-about {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .text-about {
+    font-size: 1.75rem;
+  }
+
+  /* serviços */
+
+  #service {
+    padding: 8rem 0;
+  }
+
+  .title-service {
+    font-size: 3.5rem;
+  }
+
+  .text-service {
+    font-size: 1.85rem;
+  }
+
+  .bg-icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+
+  .icon-service {
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    width: 120px;
+    height: 120px;
+  }
+
+  .service h3 {
+    font-size: 2rem;
+  }
+
+  .service p {
+    font-size: 1.25rem;
+  }
+}

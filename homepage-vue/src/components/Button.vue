@@ -1,5 +1,5 @@
 <template>
-        <button @click="handleClick()" class="d-flex align-items-center justify-content-between btn text-white fixed-btn border-active" type="button">
+        <button @click="handleClick()" class="whatsappBtn d-flex align-items-center justify-content-between btn text-white fixed-btn border-active" type="button">
            <img :src="image" style="width: 35px;"> Entre em contato
         </button>
 </template>
@@ -23,8 +23,8 @@ export default {
 
 <style scoped>
     
-    button{
-        background-color: var(--cor-whatsapp);
+    button.whatsappBtn{
+        background-color: var(--cor-whatsapp) !important;
         font-family: var(--font-secondary);
         width: 220px;
         font-size: 1.1rem;
@@ -36,8 +36,8 @@ export default {
         animation-timing-function: ease-in-out;
     }
 
-    button:hover {
-        background-color:var(--cor-whatsapp);
+    button.whatsappBtn:hover {
+        background-color: var(--cor-whatsapp) !important;
         border-color: var(--color-2);
         transform: scale(1.1);
     }
