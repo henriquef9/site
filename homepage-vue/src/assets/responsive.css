@@ -44,7 +44,11 @@
   .service p {
     font-size: 1rem;
   }
+
 }
+
+
+
 
 /* Celulares (Landscape) - entre 480 e 767 pixels de largura */
 @media (min-width: 480px) and (max-width: 767px) {
@@ -126,35 +130,6 @@
     font-size: 1.5rem;
   }
 
-  .linha-footer {
-    width: 2px !important;
-    height: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .linha-footer::after {
-    position: absolute;
-    content: "";
-    background-color: var(--white);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: -3.5px;
-    left: -3.5px;
-  }
-
-  .linha-footer::before {
-    position: absolute;
-    content: "";
-    background-color: var(--white);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: 100%;
-    right: -4px;
-  }
-
   .title-footer {
     font-size: 1.45rem;
   }
@@ -221,13 +196,6 @@
     font-size: 2rem;
   }
 
-  .title-footer {
-    font-size: 1.65rem;
-  }
-
-  .text-footer {
-    font-size: 1.45rem;
-  }
   
 }
 

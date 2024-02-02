@@ -1,9 +1,9 @@
 <template>
   <footer
     id="footer"
-    class="bg-purple d-flex row flex-column flex-md-row m-0"
+    class="bg-purple row d-flex flex-column flex-md-row justify-content-md-center m-0"
   >
-    <div class="col-12 col-md-3 row align-items-center">
+    <div class="col-12 col-md-3 d-flex flex-md-column justify-content-md-around align-items-center">
 
       <div class="col-6 col-md-12 logo-footer d-flex">
         
@@ -63,6 +63,7 @@ export default {
 
 footer{
   width: 100%;
+  padding: 2rem 1rem;
 }
 
 .img-logo {
@@ -77,10 +78,13 @@ footer{
   background: url(/public/img/fullscreen.png);
 }
 
+
 .linha-footer {
   position: relative;
   width: 100%;
   height: 2px;
+  padding: 0 !important;
+
 }
 
 .linha-footer::after {
@@ -103,6 +107,48 @@ footer{
   border-radius: 50%;
   top: -3.5px;
   right: 0px;
+}
+
+@media (min-width: 768px){
+
+footer {
+  height: 35vh;
+}
+
+.redes-sociais {
+  font-size: 1.85rem;
+}
+
+
+.linha-footer {
+  width: 2px !important;
+  height: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.linha-footer::after {
+  position: absolute;
+  content: "";
+  background-color: var(--white);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -3.5px;
+  left: -3.5px;
+}
+
+.linha-footer::before {
+  position: absolute;
+  content: "";
+  background-color: var(--white);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 100%;
+  right: -4px;
+}
+
 }
 
 </style>
