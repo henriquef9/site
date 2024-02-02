@@ -21,7 +21,8 @@
 /* Geral */
 
 /* Isso foi feito para retirar um bug onde ocorria scroll na horizontal*/
-#footer {
+
+#footer, .row  {
     margin-left: 0;
     margin-right: 0;
 }

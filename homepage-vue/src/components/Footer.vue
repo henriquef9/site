@@ -27,7 +27,7 @@
 
     <div class="linha-footer col-12 col-md-1 bg-white my-4 my-md-0"></div>
 
-    <div class="col-12 col-md-8 text-white d-flex flex-column gap-2 justify-content-center ms-3"
+    <div class="col-12 col-md-8 text-white d-flex flex-column gap-2 justify-content-center ms-md-3"
     >
 
       <div class="d-flex flex-column">
