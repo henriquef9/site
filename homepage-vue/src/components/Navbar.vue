@@ -96,13 +96,4 @@ a {
   border: 2px solid var(--purple);
 }
 
-.nav-link::before {
-  content: "";
-  position: absolute;
-  background-color: white;
-  width: 100%;
-  height: 2px;
-  top: 100%;
-  left: 0;
-}
 </style>
