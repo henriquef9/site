@@ -70,6 +70,10 @@ ul {
   list-style: none;
 }
 
+li{
+  cursor: pointer;
+}
+
 a {
   color: inherit;
   text-decoration: none;
