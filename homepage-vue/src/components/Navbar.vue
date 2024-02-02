@@ -1,5 +1,5 @@
 <template>
-  <div class="header row">
+  <div class="header row m-0">
     <div class="col-md-2 logo d-flex justify-content-start">
       <div class="d-flex">
         <div id="img-logo"></div>
@@ -87,7 +87,13 @@ a {
 }
 
 .btn {
-    padding: 0.8rem 1.2rem;
+  background-color: var(--purple);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.btn:hover{
+  border: 2px solid var(--purple);
 }
 
 .nav-link::before {

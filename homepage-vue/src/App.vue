@@ -19,11 +19,6 @@ import Footer from "./components/Footer.vue";
     </div>
   </section>
 
-  <hr
-    class="d-md-none w-50 m-4 bg-white opacity-100 my-5"
-    style="height: 3px"
-  />
-
   <section id="about" class="d-flex justify-content-between bg-black m-0 p-5">
     <div class="d-none d-md-block">
       <img src="http://via.placeholder.com/400x500" />
@@ -111,8 +106,9 @@ import Footer from "./components/Footer.vue";
     </div>
   </section>
 
-  <section id="project" class="bg-white p-3">
-    <div class="content-project text-center">
+  <section id="project" class="d-flex flex-column justify-content-center align-items-center bg-white mt-5 p-3">
+
+    <div class="mb-2 text-center">
       <h2 class="title-section text-black">
         Nossos <span class="text-purple">Projetos</span>
       </h2>
@@ -122,10 +118,10 @@ import Footer from "./components/Footer.vue";
     </div>
 
     <div
-      class="gruop-projects row justify-content-between flex-column flex-md-row align-content-center"
+      class="gruop-projects row justify-content-around flex-column flex-md-row align-content-center"
     >
       <div class="project col-12 col-md-4">
-        <div class="bg-img-project" id="img-project-1"></div>
+        <img class="bg-img-project" src="http://via.placeholder.com/342x196">
         <div class="text-black">
           <h3 class="font-primary fw-bold text-uppercase">
             desenvolvimento Customizado
@@ -138,7 +134,7 @@ import Footer from "./components/Footer.vue";
       </div>
 
       <div class="project col-12 col-md-4">
-        <div class="bg-img-project" id="img-project-2"></div>
+        <img class="bg-img-project" src="http://via.placeholder.com/342x196">
         <div class="text-black">
           <h3 class="font-primary fw-bold text-uppercase">
             práticas SEO avançadas
@@ -152,7 +148,7 @@ import Footer from "./components/Footer.vue";
       </div>
 
       <div class="project col-12 col-md-4">
-        <div class="bg-img-project" id="img-project-3"></div>
+        <img class="bg-img-project" src="http://via.placeholder.com/342x196">
         <div class="text-black">
           <h3 class="font-primary fw-bold text-uppercase">Design Responsivo</h3>
           <p class="font-secondary">
@@ -163,6 +159,7 @@ import Footer from "./components/Footer.vue";
         </div>
       </div>
     </div>
+
   </section>
 
   <Footer />
@@ -171,11 +168,6 @@ import Footer from "./components/Footer.vue";
 
 <script>
 export default {
-  data() {
-    return {
-      currentYear: new Date().getFullYear(),
-    };
-  },
 };
 </script>
 
@@ -261,10 +253,6 @@ export default {
   padding: 3rem 2rem;
 }
 
-.content-project {
-  margin-bottom: 2rem;
-}
-
 .text-project {
   font-size: 1rem;
 }
@@ -293,9 +281,10 @@ export default {
 .bg-img-project {
   width: 100%;
   height: 200px;
-  background-size: cover !important;
-  background-position: center center !important;
+  background-size: cover;
+  background-position: center center;
   border: 2px solid var(--purple);
   margin-bottom: 1.8rem;
 }
+
 </style>

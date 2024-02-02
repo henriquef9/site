@@ -1,6 +1,6 @@
 <template>
-        <button @click="handleClick()" class="whatsappBtn d-flex align-items-center justify-content-between btn text-white fixed-btn border-active" type="button">
-           <img :src="image" style="width: 35px;"> Entre em contato
+        <button id="whatsappBtn" @click="handleClick()" class="d-flex align-items-center justify-content-between btn text-white fixed-btn border-active" type="button">
+           <img :src="image" alt="Whatsapp" style="width: 35px;"> <p class="m-0 ms-2">Entre em contato</p>
         </button>
 </template>
 
@@ -23,27 +23,23 @@ export default {
 
 <style scoped>
     
-    button.whatsappBtn{
-        background-color: var(--cor-whatsapp) !important;
+    body button#whatsappBtn{
+        background-color: var(--green-whatsapp);
         font-family: var(--font-secondary);
-        width: 220px;
         font-size: 1.1rem;
         font-weight: bold;
-        border-radius: 20px;
-        color: var(--color-2);
-        transition: 1.2s;
-        animation: upDown 3s infinite;
-        animation-timing-function: ease-in-out;
+        border-radius: 45px;
+        color: var(--white);
+        transition: transform 0.3s ease; /* Adiciona transição para o scale */
+        animation: upDown 3s infinite ease-in-out;
     }
 
-    button.whatsappBtn:hover {
-        background-color: var(--cor-whatsapp) !important;
-        border-color: var(--color-2);
-        transform: scale(1.1);
+    #whatsappBtn:hover {
+        animation: upDown 3s infinite ease-in-out, scaleUp 0.3s forwards;
     }
     
-    body .border-active:active{
-        border: 2px solid #25D366;
+    body button#whatsappBtn:active{
+        border: 2px solid var(--black);
         outline: none;
     }
     
@@ -53,11 +49,26 @@ export default {
         right: 20px;
     }
     
-    @keyframes upDown{
-        0%{ transform: translateY(0);}
-        50% {transform: translateY(-5px);}
-        100% {transform: translateY(0);}
+    @keyframes upDown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
     }
 
+    @keyframes scaleUp {
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+    /* Estilo para celulares e tablets com largura de tela até 768 pixels */
+    @media (max-width: 768px) {
+        p{
+            display: none;
+        }
+    }
     
 </style>

@@ -1,6 +1,7 @@
-/* Celulares (Portrait) - abaixo de 480 pixels de largura (8)*/
+/* Celulares (Portrait) - abaixo de 480 pixels de largura */
 @media (max-width: 479px) {
   /* Estilos específicos para celulares em portrait */
+
   /* home */
 
   .title-home {
@@ -208,21 +209,12 @@
 
   /* footer */
 
-  #footer {
-    padding: 12rem 6rem;
-  }
-
   .logo-footer {
-    margin-bottom: 4rem;
-  }
-
-  .logo-footer .img-logo {
-    width: 100px;
-    height: 100px;
+    margin-bottom: 2rem;
   }
 
   .logo-footer .logo-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .redes-sociais {
