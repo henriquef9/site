@@ -111,9 +111,6 @@ footer{
 
 @media (min-width: 768px){
 
-footer {
-  height: 35vh;
-}
 
 .redes-sociais {
   font-size: 1.85rem;
