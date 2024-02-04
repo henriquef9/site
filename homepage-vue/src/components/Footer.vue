@@ -7,7 +7,7 @@
 
       <div class="col-6 col-md-12 logo-footer d-flex">
         
-        <div class="img-logo"></div>
+        <img :src="icon" alt="icon">
         
         <div class="ms-2 d-flex flex-column align-self-center logo-text">
           <span class="text-white">Apollo</span>
@@ -17,10 +17,10 @@
       </div>
 
       <div class="col-6 col-md-12 redes-sociais text-white d-flex gap-4">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i @click="abrirFacebook()" class="fa-brands fa-facebook-f cursor-pointer"></i>
+        <i @click="abrirInstagram()" class="fa-brands fa-instagram cursor-pointer"></i>
+        <i class="fa-brands fa-linkedin cursor-pointer"></i>
+        <i class="fa-brands fa-twitter cursor-pointer"></i>
       </div>
       
     </div>
@@ -32,19 +32,12 @@
 
       <div class="d-flex flex-column">
         <span class="title-footer font-secondary">E-mail</span>
-        <span class="text-footer font-primary">Contato@contato.com</span>
-      </div>
-
-      <div class="d-flex flex-column">
-        <span class="title-footer font-secondary">Endereço</span>
-        <span class="text-footer font-primary"
-          >123 Anywhere St., Any City, State, Country 12345</span
-        >
+        <span class="text-footer font-primary">contato@agencypollotech.com.br</span>
       </div>
 
       <div class="d-flex flex-column">
         <span class="title-footer font-secondary">Contato</span>
-        <span class="text-footer font-primary">(98) 99999-9999</span>
+        <span class="text-footer font-primary">(98) 8884-2365</span>
       </div>
     </div>
 
@@ -52,8 +45,24 @@
 </template>
 
 <script>
+
+import icon from '@/components/icons/Icon95x95.png';
+
 export default {
   name: "Footer",
+  data(){
+    return{
+      icon,
+    }
+  },
+  methods:{
+    abrirFacebook(){
+      window.open("https://www.facebook.com/profile.php?id=61556083589840", "_blank");
+    },
+    abrirInstagram(){
+      window.open("https://www.instagram.com/agencypollotech/", "_blank");
+    }
+  }
 };
 </script>
 
@@ -64,6 +73,10 @@ export default {
 footer{
   width: 100%;
   padding: 2rem 1rem;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .img-logo {

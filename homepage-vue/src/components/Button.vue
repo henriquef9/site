@@ -26,9 +26,10 @@ export default {
     body button#whatsappBtn{
         background-color: var(--green-whatsapp);
         font-family: var(--font-secondary);
+
         font-size: 1.1rem;
         font-weight: bold;
-        border-radius: 45px;
+        border-radius: 50px;
         color: var(--white);
         transition: transform 0.3s ease; /* Adiciona transição para o scale */
         animation: upDown 3s infinite ease-in-out;
@@ -68,6 +69,12 @@ export default {
     @media (max-width: 768px) {
         p{
             display: none;
+        }
+
+        #whatsappBtn{
+            justify-content: center !important;
+            width: 55px;
+            height: 55px;
         }
     }
     

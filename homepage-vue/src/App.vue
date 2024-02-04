@@ -1,7 +1,8 @@
 <script setup>
-import ButtonMeeting from "./components/Button.vue";
-import Navbar from "./components/Navbar.vue";
-import Footer from "./components/Footer.vue";
+import ButtonMeeting from "@/components/Button.vue";
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
+import Service from "@/components/Service.vue";
 </script>
 
 <template>
@@ -9,10 +10,15 @@ import Footer from "./components/Footer.vue";
     <Navbar />
 
     <div class="content-home">
-      <h1 class="text-uppercase text-center title-home">
-        CRIANDO UM NOVO CONCEITO DE COMO APLICATIVOS
-        <span class="text-purple">SÃO FEITOS</span>
-      </h1>
+      <div
+        class="animation-words"
+        data-words='["Profissionais","Modernos","Personalizados","Inovadores"]'
+      >
+        <h1 class="text-uppercase text-center title-home">
+          Crie sites
+          <span class="word d-block d-sm-inline-block text-purple"></span>
+        </h1>
+      </div>
       <h2 class="text-center caption-home">
         Potencialize sua presença online!
       </h2>
@@ -25,89 +31,37 @@ import Footer from "./components/Footer.vue";
     </div>
 
     <div class="content-about">
-      <div class="text-white mb-5 w-75">
+      <div class="text-white mb-5 w-md-75">
         <h2 class="title-about">
           Nossa <span class="text-purple">História</span>
         </h2>
         <p class="text-about">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, amet?
-          Nihil accusamus et architecto ad, corporis tenetur minima perferendis
-          provident doloremque labore laborum mollitia ut eius inventore rem
-          vero eos veritatis. Repudiandae, sed dolor? Ex ipsum amet assumenda
-          nulla veniam accusantium doloremque mollitia omnis rerum dolores qui,
-          doloribus dignissimos? Vitae fugit pariatur culpa autem quasi aut
-          itaque fuga molestias vero! Voluptatem quia dolorem at quam aut,
-          ducimus error consequatur corrupti fugit rem sequi recusandae deleniti
-          assumenda, ea deserunt quod dolores vitae id aliquid sunt pariatur
-          saepe dolorum. Nisi mollitia expedita laboriosam exercitationem ab
-          unde vero. Eius in distinctio expedita iusto?
-          <br/><br/><br/>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit asperiores fuga porro velit neque expedita, doloribus quasi numquam fugiat?
+          Bem-vindo à Pollo Tech, uma equipe apaixonada e comprometida com o
+          desenvolvimento de soluções digitais. Somos impulsionados pela
+          inovação, pela qualidade e pelo compromisso em transformar suas ideias
+          em realidade, proporcionando experiências digitais memoráveis.
+        </p>
+        <p>
+          A diversidade é parte integrante de nossa força., acreditamos que uma
+          equipe diversificada é fundamental para a criatividade e a inovação,
+          impulsionando-nos a superar desafios de maneiras únicas e
+          surpreendentes.. Somos uma equipe é composta por:
+        </p>
+        <p>
+          Junte-se a nós na Pollo Tech, onde cada projeto é uma jornada
+          emocionante, e cada desafio é uma oportunidade de criar algo
+          extraordinário.
         </p>
       </div>
     </div>
   </section>
 
-  <section id="service" class="bg-black">
-    <div class="content-service text-white text-center">
-      <h2 class="title-section mt-5">
-        Nossos <span class="text-purple">Serviços</span>
-      </h2>
-      <p class="text-service">
-        Destaque-se na web com nossos serviços exclusivos.
-      </p>
-    </div>
+  <Service />
 
-    <div class="group-services text-white text-center row">
-      <div class="service col-12 col-md-4">
-        <div class="d-flex justify-content-center my-4">
-          <div
-            class="bg-icon bg-white d-flex justify-content-center align-items-center"
-          >
-            <div id="icon-service-1" class="icon-service bg-white"></div>
-          </div>
-        </div>
-
-        <div>
-          <h3>Serviço 1</h3>
-          <p>Optimize manpower to benefit your business.</p>
-        </div>
-      </div>
-
-      <div class="service col-12 col-md-4">
-        <div class="d-flex justify-content-center my-4">
-          <div
-            class="bg-icon bg-white d-flex justify-content-center align-items-center"
-          >
-            <div id="icon-service-2" class="icon-service bg-white"></div>
-          </div>
-        </div>
-
-        <div>
-          <h3>Serviço 1</h3>
-          <p>Optimize manpower to benefit your business.</p>
-        </div>
-      </div>
-
-      <div class="service col-12 col-md-4">
-        <div class="d-flex justify-content-center my-4">
-          <div
-            class="bg-icon bg-white d-flex justify-content-center align-items-center"
-          >
-            <div id="icon-service-3" class="icon-service bg-white"></div>
-          </div>
-        </div>
-
-        <div>
-          <h3>Serviço 1</h3>
-          <p>Optimize manpower to benefit your business.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="project" class="d-flex flex-column justify-content-center align-items-center bg-white mt-5 p-3">
-
+  <section
+    id="project"
+    class="d-flex flex-column justify-content-center align-items-center bg-white mt-5 p-3"
+  >
     <div class="mb-2 text-center">
       <h2 class="title-section text-black">
         Nossos <span class="text-purple">Projetos</span>
@@ -121,7 +75,7 @@ import Footer from "./components/Footer.vue";
       class="gruop-projects row justify-content-around flex-column flex-md-row align-content-center"
     >
       <div class="project col-12 col-md-4">
-        <img class="bg-img-project" src="http://via.placeholder.com/342x196">
+        <img class="bg-img-project" src="http://via.placeholder.com/342x196" />
         <div class="text-black">
           <h3 class="font-primary fw-bold text-uppercase">
             desenvolvimento Customizado
@@ -134,7 +88,7 @@ import Footer from "./components/Footer.vue";
       </div>
 
       <div class="project col-12 col-md-4">
-        <img class="bg-img-project" src="http://via.placeholder.com/342x196">
+        <img class="bg-img-project" src="http://via.placeholder.com/342x196" />
         <div class="text-black">
           <h3 class="font-primary fw-bold text-uppercase">
             práticas SEO avançadas
@@ -148,7 +102,7 @@ import Footer from "./components/Footer.vue";
       </div>
 
       <div class="project col-12 col-md-4">
-        <img class="bg-img-project" src="http://via.placeholder.com/342x196">
+        <img class="bg-img-project" src="http://via.placeholder.com/342x196" />
         <div class="text-black">
           <h3 class="font-primary fw-bold text-uppercase">Design Responsivo</h3>
           <p class="font-secondary">
@@ -159,7 +113,6 @@ import Footer from "./components/Footer.vue";
         </div>
       </div>
     </div>
-
   </section>
 
   <Footer />
@@ -167,7 +120,42 @@ import Footer from "./components/Footer.vue";
 </template>
 
 <script>
+import $ from "jquery";
+
 export default {
+  mounted() {
+    $(".animation-words").each(function () {
+      const animationContainer = $(this);
+      const wordElement = animationContainer.find(".word");
+      const wordsArray = animationContainer.data("words");
+
+      let currentWordIndex = 0;
+      let currentLetterIndex = 0;
+
+      function animateWords() {
+        if (currentLetterIndex === wordsArray[currentWordIndex].length) {
+          currentWordIndex = (currentWordIndex + 1) % wordsArray.length;
+          currentLetterIndex = 0;
+          wordElement.text("");
+        }
+
+        const currentWord = wordsArray[currentWordIndex];
+        const currentLetter = currentWord[currentLetterIndex];
+
+        wordElement.text(wordElement.text() + currentLetter);
+        currentLetterIndex++;
+
+        setTimeout(
+          animateWords,
+          currentLetterIndex === wordsArray[currentWordIndex].length
+            ? 1000
+            : 250
+        ); // Tempo entre as letras (em milissegundos)
+      }
+
+      animateWords();
+    });
+  },
 };
 </script>
 
@@ -210,43 +198,6 @@ export default {
   text-align: left;
 }
 
-/* serviços */
-
-#service {
-  padding: 1rem 2rem;
-  background-color: var(--black);
-}
-
-.service {
-  padding: 1.5rem 0;
-}
-
-.bg-icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px 20px #3f3f3f;
-}
-
-#icon-service-1 {
-  background: url(/public/img/inteligencia-artificial.png) no-repeat;
-}
-
-#icon-service-2 {
-  background: url(/public/img/medalha.png) no-repeat;
-}
-
-#icon-service-3 {
-  background: url(/public/img/trofeu.png) no-repeat;
-}
-
-.icon-service {
-  background-size: 100% 100% !important;
-  background-position: center center !important;
-  width: 80px;
-  height: 80px;
-}
-
 /* projects */
 
 #project {
@@ -286,5 +237,4 @@ export default {
   border: 2px solid var(--purple);
   margin-bottom: 1.8rem;
 }
-
 </style>
