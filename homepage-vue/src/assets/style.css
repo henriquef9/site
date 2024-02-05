@@ -16,6 +16,31 @@
     --red: #FA0644;
     --dark-gray: #363636;
     --green-whatsapp: #25D366;
+    
+    --fs-title: 1.5rem;
+    --fs-caption: 1rem;
+
+    --fs-sm-title: 2rem;
+    --fs-sm-caption: 1.5rem;
+
+    --fs-md-title: 2.5rem;
+    --fs-md-caption: 2rem;
+
+    --fs-lg-title: 3rem;
+    --fs-lg-caption: 2.5rem;
+
+    --fs-xl-title: 3.5rem;
+    --fs-xl-caption: 3rem;
+
+    --fs-xxl-title: 4rem;
+    --fs-xxl-caption: 3.5rem;
+    
+    --fs-text: 0.75rem;
+    --fs-sm-text: 1rem;
+    --fs-md-text: 1.25rem;
+    --fs-lg-text: 1.75rem;
+    --fs-xl-text: 2rem;
+    --fs-xxl-text: 2.25rem;
 }
 
 /* Geral */

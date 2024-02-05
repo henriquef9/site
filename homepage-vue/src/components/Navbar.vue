@@ -2,8 +2,8 @@
   <div class="header row m-0">
     <div class="col col-lg-2 logo d-flex justify-content-start">
       <div class="d-flex">
-        <img :src="icon" alt="icon">
-        <div class="ms-2 d-flex flex-column align-self-center logo-text">
+        <div><img :src="icon" alt="icon" class="img-fluid" ></div>
+        <div class="ms-2 d-flex flex-column align-self-center logo-text fs-6">
           <span>Apollo</span>
           <span class="text-purple text-capitalize">tech</span>
         </div>

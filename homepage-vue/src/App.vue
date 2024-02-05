@@ -25,7 +25,7 @@ import Service from "@/components/Service.vue";
     </div>
   </section>
 
-  <section id="about" class="d-flex justify-content-between bg-black m-0 p-5">
+  <section id="about" class="d-flex justify-content-between bg-black m-0 p-md-5">
     <div class="d-none d-md-block">
       <img src="http://via.placeholder.com/400x500" />
     </div>
@@ -41,13 +41,13 @@ import Service from "@/components/Service.vue";
           inovação, pela qualidade e pelo compromisso em transformar suas ideias
           em realidade, proporcionando experiências digitais memoráveis.
         </p>
-        <p>
+        <p class="text-about">
           A diversidade é parte integrante de nossa força., acreditamos que uma
           equipe diversificada é fundamental para a criatividade e a inovação,
           impulsionando-nos a superar desafios de maneiras únicas e
           surpreendentes.. Somos uma equipe é composta por:
         </p>
-        <p>
+        <p class="text-about">
           Junte-se a nós na Pollo Tech, onde cada projeto é uma jornada
           emocionante, e cada desafio é uma oportunidade de criar algo
           extraordinário.
@@ -63,10 +63,10 @@ import Service from "@/components/Service.vue";
     class="d-flex flex-column justify-content-center align-items-center bg-white mt-5 p-3"
   >
     <div class="mb-2 text-center">
-      <h2 class="title-section text-black">
+      <h2 class="title-project text-black">
         Nossos <span class="text-purple">Projetos</span>
       </h2>
-      <p class="text-project text-black">
+      <p class="caption-project text-black">
         Explore nossa galeria de realizações.
       </p>
     </div>
@@ -176,10 +176,6 @@ export default {
   padding: 0 2rem;
 }
 
-.caption-home {
-  font-size: 1rem;
-}
-
 /* about */
 
 #img-about {
@@ -192,20 +188,10 @@ export default {
   padding: 2rem;
 }
 
-.text-about {
-  font-size: 0.95rem;
-  font-family: var(--font-secondary);
-  text-align: left;
-}
-
 /* projects */
 
 #project {
   padding: 3rem 2rem;
-}
-
-.text-project {
-  font-size: 1rem;
 }
 
 .gruop-projects {
@@ -237,4 +223,6 @@ export default {
   border: 2px solid var(--purple);
   margin-bottom: 1.8rem;
 }
+
+
 </style>

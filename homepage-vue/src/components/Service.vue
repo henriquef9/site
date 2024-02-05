@@ -1,10 +1,10 @@
 <template>
   <section id="service" class="bg-black">
     <div class="content-service text-white text-center">
-      <h2 class="title-section mt-5">
+      <h2 class="title-service mt-5">
         Nossos <span class="text-purple">Serviços</span>
       </h2>
-      <p class="text-service">
+      <p class="caption-service">
         Destaque-se na web com nossos serviços exclusivos.
       </p>
     </div>
@@ -64,7 +64,6 @@ export default {
 
 .service {
   padding: 1.8rem;
-  font-size: 0.9em;
 }
 
 .bg-icon {

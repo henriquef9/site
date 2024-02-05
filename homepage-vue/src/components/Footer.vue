@@ -3,7 +3,7 @@
     id="footer"
     class="bg-purple row d-flex flex-column flex-md-row justify-content-md-center m-0"
   >
-    <div class="col-12 col-md-3 d-flex flex-md-column justify-content-md-around align-items-center">
+    <div class="col-12 col-md-3 d-flex flex-md-column justify-content-md-around align-items-center me-md-4">
 
       <div class="col-6 col-md-12 logo-footer d-flex">
         
@@ -124,6 +124,10 @@ footer{
 
 @media (min-width: 768px){
 
+footer{
+  width: 100%;
+  padding: 4rem 2rem;
+}
 
 .redes-sociais {
   font-size: 1.85rem;
