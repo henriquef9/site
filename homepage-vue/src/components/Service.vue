@@ -17,7 +17,7 @@
           <div
             class="bg-icon bg-white d-flex justify-content-center align-items-center"
           >
-            <div id="icon-service-1" class="icon-service bg-white"></div>
+            <div id="" class="icon-service bg-white" :style="{ backgroundImage:  `url(public/img/${images[index]})` }"></div>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export default {
         "UX/UI",
         "Manutenção e Suporte Técnico",
         "Consultoria em Tecnologia",
-        "Desenvolvimento de Conteúdo e SE",
+        "Desenvolvimento de Conteúdo e SEO",
       ],
       descriptions: [
         "Construção de aplicações web personalizadas para atender às necessidades específicas dos clientes, como sistemas de gerenciamento, CRM (Customer Relationship Management), e-commerce, entre outros.",
@@ -51,6 +51,14 @@ export default {
         "Oferta de consultoria para ajudar os clientes a escolherem as melhores tecnologias, plataformas e estratégias para atingir seus objetivos.",
         "Produção de conteúdo relevante e otimizado para mecanismos de busca (SEO) para melhorar a visibilidade online dos clientes",
       ],
+      images: [
+        "designer-de-web.png",
+        "local-na-rede-internet.png",
+        "design-ux.png",
+        "apoio-suporte.png",
+        "servico.png",
+        "seo.png"
+      ]
     };
   },
 };
@@ -71,18 +79,6 @@ export default {
   height: 120px;
   border-radius: 50%;
   box-shadow: 0px 0px 20px 20px #3f3f3f;
-}
-
-#icon-service-1 {
-  background: url(/public/img/inteligencia-artificial.png) no-repeat;
-}
-
-#icon-service-2 {
-  background: url(/public/img/medalha.png) no-repeat;
-}
-
-#icon-service-3 {
-  background: url(/public/img/trofeu.png) no-repeat;
 }
 
 .icon-service {
